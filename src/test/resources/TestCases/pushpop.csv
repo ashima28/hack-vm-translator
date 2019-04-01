@@ -1,0 +1,280 @@
+"C_PUSH", "argument", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push argument 1
+@ARG
+D=M
+@1
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "local", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push local 1
+@LCL
+D=M
+@1
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "static", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push static 1
+@1
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "constant", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push constant 1
+@1
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "that", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push that 1
+@THAT
+D=M
+@1
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "this", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push this 1
+@THIS
+D=M
+@1
+A=A+D
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "pointer", 0, "// setup
+@256
+D=A
+@SP
+M=D
+// push pointer 0
+@THIS
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "pointer", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push pointer 1
+@THAT
+D=M
+@SP
+A=M
+M=D
+@SP
+M=M+1
+"
+"C_PUSH", "temp", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// push temp 1
+@6
+D=M
+@SP
+A=M
+M=D
+D=A+1
+@SP
+M=D
+"
+"C_POP", "argument", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop argument 1
+@ARG
+D=M
+@1
+D=D+A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "local", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop local 1
+@1
+D=A
+@LCL
+D=D+M
+@R13
+M=D
+@SP
+M=M-1
+A=M
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "static", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop static 1
+@1
+D=A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "that", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop that 1
+@THAT
+D=M
+@1
+D=D+A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "this", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop this 1
+@THIS
+D=M
+@1
+D=D+A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "pointer", 0, "// setup
+@256
+D=A
+@SP
+M=D
+// pop pointer 0
+@THIS
+D=A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "pointer", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop pointer 1
+@THAT
+D=A
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+"
+"C_POP", "temp", 1, "// setup
+@256
+D=A
+@SP
+M=D
+// pop temp 1
+@SP
+M=M-1
+A=M
+D=M
+@6
+M=D
+"

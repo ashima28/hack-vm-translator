@@ -11,9 +11,9 @@
 
 [![author](https://img.shields.io/badge/author-dhorvay-brightgreen.svg)](https://www.gitlab.com/dhorvay)
 [![language](https://img.shields.io/badge/language-java-b07219.svg)](https://www.gitlab.com/dhorvay)
-[![license: GPL v3](https://img.shields.io/badge/license-GPLv3-informational.svg)](https://gitlab.com/dhorvay/hack-assembler/blob/master/LICENSE)
-[![pipeline status](https://gitlab.com/dhorvay/hack-vm-translator/badges/master/pipeline.svg)](https://gitlab.com/dhorvay/hack-assembler/commits/master)
-[![coverage report](https://gitlab.com/dhorvay/hack-vm-translator/badges/master/coverage.svg)](https://gitlab.com/dhorvay/hack-assembler/commits/master)
+[![license: GPL v3](https://img.shields.io/badge/license-GPLv3-informational.svg)](https://gitlab.com/dhorvay/hack-vm-translator/blob/master/LICENSE)
+[![pipeline status](https://gitlab.com/dhorvay/hack-vm-translator/badges/master/pipeline.svg)](https://gitlab.com/dhorvay/hack-vm-translator/commits/master)
+[![coverage report](https://gitlab.com/dhorvay/hack-vm-translator/badges/master/coverage.svg)](https://gitlab.com/dhorvay/hack-vm-translator/commits/master)
 </div>
 
 ## Background
